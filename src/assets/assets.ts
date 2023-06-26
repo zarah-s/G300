@@ -1,15 +1,16 @@
-import Account from './icons/account.svg';
-import Caret from './icons/caret.svg';
-import Courses from './icons/courses.svg';
-import Home from './icons/home.svg';
-import Logout from './icons/logout.svg';
-import Mentors from './icons/mentors.svg';
-import Message from './icons/message.svg';
-import Notification from './icons/notification.svg';
-import Schedule from './icons/schedule.svg';
 import Search from './icons/search.svg';
-import Students from './icons/students.svg';
-import UserRole from './icons/user-role.svg';
+import Caret from './icons/caret.svg';
+import Logout from './icons/logout.svg';
+import Avatar from './images/avatar.png';
+import { ReactComponent as Account } from './icons/account.svg';
+import { ReactComponent as Courses } from './icons/courses.svg';
+import { ReactComponent as Home } from './icons/home.svg';
+import { ReactComponent as Mentors } from './icons/mentors.svg';
+import { ReactComponent as Message } from './icons/message.svg';
+import { ReactComponent as Notification } from './icons/notification.svg';
+import { ReactComponent as Schedule } from './icons/schedule.svg';
+import { ReactComponent as Students } from './icons/students.svg';
+import { ReactComponent as UserRole } from './icons/user-role.svg';
 
 
 const Assets = {
@@ -25,6 +26,7 @@ const Assets = {
     Search,
     Students,
     UserRole,
+    Avatar,
 }
 
 

@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html * {
+    font-family: 'Inter', sans-serif;
+}
+
+.active-stroke path {
+    stroke: #3B6FEE;
+}
+
+.transparent-stroke path {
+    stroke: #3B6FEE;
+}
+
+.transparent-fill path {
+    fill: #3B6FEE;
+}
+
+.active-fill path {
+    fill: #3B6FEE;
+}
