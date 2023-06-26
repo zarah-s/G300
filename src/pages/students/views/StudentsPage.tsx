@@ -37,7 +37,7 @@ const StudentsPage = () => {
             </tr>
           </thead>
           <tbody>
-            {[0, 1, 2, 3, 4, 5].map((row) => (
+            {[0, 1, 2, 3].map((row) => (
               <TableRow key={row} />
             ))}
           </tbody>

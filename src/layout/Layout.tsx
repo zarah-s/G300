@@ -31,7 +31,7 @@ const Layout = ({ children }: Props) => {
       </button>
       <Sidebar />
 
-      <div className="px-10 pb-10 xl:ml-64 lg:ml-64 md:ml-20 sm:ml-0 xs:ml-0 overflow-x-auto">
+      <div className="xl:px-10 lg:px-10 md:px-10 sm:px-3 xs:px-3 pb-10 xl:ml-64 lg:ml-64 md:ml-20 sm:ml-0 xs:ml-0 overflow-x-auto">
         <div className="py-10 flex flex-wrap items-center justify-between">
           <h4 className="text-[#858585] font-[700] text-lg">
             Admin Management Panel
