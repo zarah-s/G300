@@ -2,6 +2,7 @@ import Search from './icons/search.svg';
 import Caret from './icons/caret.svg';
 import Logout from './icons/logout.svg';
 import Avatar from './images/avatar.png';
+import Profile from './images/profile.png';
 import { ReactComponent as Account } from './icons/account.svg';
 import { ReactComponent as Courses } from './icons/courses.svg';
 import { ReactComponent as Home } from './icons/home.svg';
@@ -27,6 +28,7 @@ const Assets = {
     Students,
     UserRole,
     Avatar,
+    Profile,
 }
 
 

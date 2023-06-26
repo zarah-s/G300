@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+const defaultColors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
+    colors: {
+      ...defaultColors,
+      "faded": "#858585",
+      "fadedborder": "#F0F0F0",
 
+    },
     container: {
       padding: {
         DEFAULT: "0px",
@@ -35,5 +42,7 @@ module.exports = {
       xl: "1200px",
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

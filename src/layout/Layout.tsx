@@ -6,7 +6,7 @@ interface Props {
 }
 const Layout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="">
       <button
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
@@ -31,23 +31,23 @@ const Layout = ({ children }: Props) => {
       </button>
       <Sidebar />
 
-      <div className="px-10 sm:ml-64">
-        <div className="py-10 flex items-center justify-between">
+      <div className="px-10 pb-10 xl:ml-64 lg:ml-64 md:ml-20 sm:ml-0 xs:ml-0 overflow-x-auto">
+        <div className="py-10 flex flex-wrap items-center justify-between">
           <h4 className="text-[#858585] font-[700] text-lg">
             Admin Management Panel
           </h4>
 
-          <div className="flex items-center gap-10">
+          <div className="flex items-center justify-between xl:gap-10 lg:gap-10 md:gap-10 flex-wrap sm:gap-3 xs:gap-3">
             <div className="border-[#F0F0F0] border-2 rounded-full py-1 px-2 flex items-center gap-2">
               <img src={Assets.Search} alt="" />
               <input
                 type="text"
                 placeholder="search"
-                className="flex-grow border-none outline-none"
+                className=" border-none outline-none"
               />
             </div>
             <div className="">
-              <h4 className="text-[#858585] font-[700]">
+              <h4 className="text-[#858585] font-[700] whitespace-nowrap">
                 Accounts | Segun &#x25B4;
               </h4>
             </div>

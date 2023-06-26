@@ -15,6 +15,10 @@ html * {
     stroke: #3B6FEE;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .transparent-fill path {
     fill: #3B6FEE;
 }

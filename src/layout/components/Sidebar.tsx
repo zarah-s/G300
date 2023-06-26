@@ -34,11 +34,13 @@ const Sidebar = () => {
   return (
     <aside
       id="default-sidebar"
-      className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      className="fixed top-0 left-0 z-40 xl:w-64 lg:w-64 md:w-20 sm:w-20 xs:w-20 h-screen transition-transform -translate-x-full sm:translate-x-0"
       aria-label="Sidebar"
     >
       <div className="h-full py-10 overflow-y-auto bg-[#3B6FEE]">
-        <img src={Assets.Avatar} className="mx-8 mb-10" alt="" />
+        <div className="flex items-center justify-center">
+          <img src={Assets.Avatar} className="mb-10" alt="" />
+        </div>
         <ul className="space-y-3">
           {navigationData.map((navigation, index) => {
             return (
@@ -64,7 +66,9 @@ const Sidebar = () => {
                       getActivefillClass(navigation.label)
                     }`}
                   />
-                  <span className="ml-3">{navigation.label}</span>
+                  <div className="xl:block lg:block md:hidden sm:hidden xs:hidden">
+                    <span className="ml-3">{navigation.label}</span>
+                  </div>
                 </Link>
               </li>
             );
@@ -72,7 +76,9 @@ const Sidebar = () => {
           <li className="px-4 mr-4">
             <Link to="/" className="flex items-center p-2.5 text-white">
               <img src={Assets.Logout} alt="" />
-              <span className="ml-3">Logout</span>
+              <div className="xl:block lg:block md:hidden sm:hidden xs:hidden">
+                <span className="ml-3">Logout</span>
+              </div>
             </Link>
           </li>
         </ul>
